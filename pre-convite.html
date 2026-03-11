@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pr&eacute;-convite | Timira &amp; Tanilson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="pre-convite.css" />
+  </head>
+  <body>
+    <div class="sky"></div>
+    <div class="veil"></div>
+    <div id="orbiting" class="orbiting" aria-hidden="true"></div>
+    <div id="stars" class="stars" aria-hidden="true"></div>
+
+    <main class="invitation">
+            <header class="card-head">
+        <div class="hero-image" aria-hidden="true">
+          <img src="img/casal.jpeg" alt="" />
+        </div>
+        <div class="hero-content">
+          <p class="top-kicker">Pr&eacute;-Convite</p>
+          <p class="parents">COM A B&Ecirc;N&Ccedil;&Atilde;O DE SEUS PAIS</p>
+          <h1 class="couple-name">Timira e Tanilson</h1>
+          <p class="invite-line">CONVIDAM PARA O SEU CASAMENTO</p>
+          <p class="event-date">26 DE JUNHO DE 2026</p>
+          <div class="event-divider" aria-hidden="true"></div>
+          <p class="time-line">&Aacute;S 20:30H</p>
+
+          <div class="icon-actions" aria-label="A&ccedil;&otilde;es r&aacute;pidas">
+            <button class="icon-action" type="button" id="scroll-to-rsvp" aria-label="Ir para confirma&ccedil;&atilde;o de presen&ccedil;a">
+              <span class="icon-circle" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true">
+                  <line x1="8" y1="7" x2="20" y2="7" />
+                  <line x1="8" y1="12" x2="20" y2="12" />
+                  <line x1="8" y1="17" x2="20" y2="17" />
+                  <path d="M4 6.5L5.5 8L8 4.5" />
+                  <path d="M4 11.5L5.5 13L8 9.5" />
+                  <path d="M4 16.5L5.5 18L8 14.5" />
+                </svg>
+              </span>
+              <span class="icon-caption">Confirmar</span>
+              <span class="icon-caption">a minha presen&ccedil;a</span>
+            </button>
+          </div>
+          <p class="icon-note">Clique no &iacute;cone</p>
+
+          </div>
+      </header>
+
+      <section class="tab-content">
+        <article id="story" class="tab-panel">
+        </article>
+
+        <article id="place" class="tab-panel">
+        </article>
+
+        <article id="rsvp" class="tab-panel">
+          <p class="section-title">Confirma&ccedil;&atilde;o de presen&ccedil;a</p>
+          <form class="rsvp-form" id="rsvp-form" onsubmit="return false;">
+            <label for="name">Nome</label>
+            <input id="name" type="text" placeholder="Seu nome completo" autocomplete="name" />
+            <div class="rsvp-row">
+              <button type="button" data-resposta="Tenho disponibilidade">Tenho disponibilidade</button>
+              <button type="button" data-resposta="N&atilde;o tenho disponibilidade">N&atilde;o tenho disponibilidade</button>
+            </div>
+          </form>
+          <p id="feedback" class="feedback" aria-live="polite"></p>
+        </article>
+      </section>
+
+    </main>
+    <script src="pre-convite.js"></script>
+  </body>
+</html>
